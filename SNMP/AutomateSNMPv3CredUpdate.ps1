@@ -11,9 +11,9 @@ $switches = @(
 )
 
 # Define SNMPv3 credentials
-$newAuthPassword = "AaBbCcDdEe1235"    # New SNMPv3 Auth Password
+$newAuthPassword = "AaBbCcDdEe1235"     # New SNMPv3 Auth Password
 $newPrivPassword = "123456789AaBbDd"    # New SNMPv3 Priv Password
-$snmpUser = "snmpv3user"                   # Existing SNMPv3 User
+$snmpUser = "snmpv3user"                # Existing SNMPv3 User
 $snmpgroup = "SNMPv3GROUP"              # Existing SNMPv3 Group
 
 # Load SSH session module
