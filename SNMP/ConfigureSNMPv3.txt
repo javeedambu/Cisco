@@ -1,0 +1,11 @@
+#Execute on the Cisco switch to create a SNMPV3 cred
+
+!
+enable
+configure terminal
+snmp-server group SNMPv3Group v3 priv
+snmp-server user snmpv3user SNMPv3Group v3 auth sha AaBbCcDdEe1234 priv aes 128 123456789AaBbCc
+snmp-server view MyView iso included
+snmp-server group SNMPv3Group v3 priv read MyView
+end
+write memory
