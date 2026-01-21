@@ -93,9 +93,10 @@ Fabric
 
 ---
 
-## STEP 4 – Allow the SNMP monitoring server IP (THIS IS THE KEY PART)
+## STEP 4 – Allow the SNMP monitoring server IP
 
 ### THIS IS WHERE THE POLLING SERVER IP IS ALLOWED
+> Note: When an SNMP management station connects with APIC using SNMPv3, APIC does not enforce the client IP address specified in the SNMP client group profile. For SNMPv3, the management station must exist in the Client Entries list, but the IP address need not match, as the SNMPv3 credentials alone are sufficient for access.
 
 In the **same SNMP Policy**:
 
@@ -124,7 +125,9 @@ In the **same SNMP Policy**:
      * **IP Address of SNMP monitoring server**
 
 > ✅ This is the **only place** where the SNMP poller IP is allowed
+
 > ✅ Required even for SNMPv3
+
 > ⚠ For SNMPv3, the IP does **not have to match**, but **an entry must exist**
 
 ---
