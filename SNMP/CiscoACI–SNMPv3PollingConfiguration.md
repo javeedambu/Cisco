@@ -1,4 +1,4 @@
-# Cisco ACI – SNMPv3 Polling Configuration (Full & Correct Steps)
+# Cisco ACI – SNMPv3 Polling Configuration
 
 ## Key principles (read first)
 
