@@ -1,5 +1,3 @@
----
-
 # Cisco ACI – SNMPv3 Polling Configuration (Full & Correct Steps)
 
 ## Key principles (read first)
@@ -12,7 +10,7 @@
   * SNMP policy
   * SNMP client group (this is where the monitoring server is allowed)
   * Policy attachment to the fabric
-* **Switch CLI is not used**
+* Switch CLI is not used**
 
 ---
 
